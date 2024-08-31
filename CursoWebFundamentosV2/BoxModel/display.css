@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+}
+
+p {
+    width: 70%;
+    background-color: #ccc;
+}
+
+h1 {
+    border: 2px solid red;
+    width: 25%;
+}
+
+a {
+    background-color: yellow;
+    /* width and height do not apply to inline-elements */
+    width: 20px;
+    height: 10px;
+    margin: 50px;
+    padding: 10px;
+    display: inline-block;
+}
+
+strong {
+    /* padding: 20px; */
+    background-color: rgb(119, 119, 220);
+    display: inline-block;
+    height: 60px;
+    width: 50%;
+}
+
+b {
+    display: inline;
+    color: yellow;
+    visibility: hidden;
+}
