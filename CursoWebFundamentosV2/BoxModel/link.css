@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {
+    font-family: sans-serif;
+    color: red;
+}
+
+a {
+    display: inline-block
+}
+
+/* estado original */
+a:link {
+    color: red;
+    padding: 3px;
+}
+
+/* paginaS ja visitadas */
+a:visited {
+    color: green;
+}
+
+a:hover {
+    background-color: #ccc;
+    text-decoration: none;
+}
+
+a:active {
+    background-color: yellow;
+}
