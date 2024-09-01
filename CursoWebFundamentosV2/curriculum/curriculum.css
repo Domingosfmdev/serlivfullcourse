@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 
+color: 
+h1 
+fundo       #ACAFD4 
+font-color  #000043
+background- #cccccc
+
+font text #79726E
+*/
+
+body {
+    background-color: #cccccc;
+    font-family: sans-serif;
+
+}
+
+header ,main , footer{
+    max-width:950px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+header {
+    background-attachment: fixed;
+}
+
+header li {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+
+.titulo {
+    text-align: center;
+}
+
+.titulo h1 {
+    color: #000043 ;
+    background-color: #ACAFD4 ;
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    letter-spacing: 4px;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.titulo p {
+    padding-bottom: 30px;
+}
+
+
+.navegacao ol {
+    /* border: 1px solid red; */
+    padding: 10px;
+    text-align: center;
+}
+
+.navegacao ol li {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    padding: 5px;
+}
+
+.navegacao ol li a {
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 2px dashed #444666;
+}
+
+
+.navegacao ol li a:hover {
+    color: rgb(47, 77, 87);
+    background-color: rgb(114, 192, 187);
+    transition: 0.5s;
+    border-radius: 2px;
+    border-bottom: none;
+}
+
+footer {
+    background-color: #000043 ;
+    padding: 40px;
+    text-align: center;
+}
+
+.space {
+    margin-top: 20px ;
+    padding: 10px 20px 2px 10px;
+    border-bottom: 2px solid #141628;
+    background-color: #9c9c9c;
+}
+
+span {
+    color: blue;
+    font-weight: bolder;
+}
+
+h2 {
+    color: #4650a8;
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+p {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.755);
+}
+
+ li {
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+.cursos > ol  {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cursos > ol li {
+    color: #202028;
+}
+
+.footer > p {
+    color: white;
+    font-size: 1.3em;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: rgb(0, 238, 255);
+}
