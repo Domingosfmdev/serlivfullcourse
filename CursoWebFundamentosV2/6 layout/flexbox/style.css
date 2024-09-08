@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.flexbox {
+    height: 250px;
+    border: 3px solid red;
+    margin-bottom: 16px;
+    display: flex;
+}
+
+
+
+.flexbox div {
+    border: 2px solid orange;
+    width: 150px;
+    margin: 15px;
+}
+
+.flex-container1 {
+    /* wrap /  mowrap */
+    flex-wrap:  wrap;
+    /* row /column /row-reverse/ columns-reverse */
+    flex-direction: row;
+    /* flex(direction + wrap) */
+    flex-flow: row wrap;
+}
+
+.flex-container2 {
+    /* flex-start/end */
+    justify-content: space-around;
+}
+
+.flex-container2 div {
+    width: 30px;
+    margin: 0;
+}
+
+.flex-container3 {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-container3 div {
+    width: 30px;
+    margin: 0;
+}
+
+.flex-container4 {
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.flex-container4 div {
+    width: 30px;
+    margin: 0;
+}
+
+.flex-container5 {
+    justify-content: center;
+    /* alinhamento em uma unica linha */
+    align-items: stretch;
+    /* alinha quando tem mais de 1 */
+    /* align-content: stretch; */
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+
+.flex-container5 div {
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.flex-container6 {
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    height: 400px;
+}
+
+.flex-container6 div {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+}
