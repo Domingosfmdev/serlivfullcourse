@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+
+        body {
+            margin-bottom: 500px;
+        }
+        .container {
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+            height: 300px;
+            background-color: rgba(255, 0, 0, 0.521);
+            
+        }
+
+        .item {
+            background-color: burlywood;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        /* tamanho igual ao conteudo */
+        .fit-cotent .item {
+            width: fit-content;
+        }
+
+        /* o menor conteudo possivel */
+        .min-content .item {
+            width: min-content;
+        }
+
+        /* maior largura possivel */
+        .max-content .item {
+            width: max-content;        
+        }
+
+        /* esconde o conteudo que transborda */
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        /* adiciona barra de rolagem */
+        .overflow-scroll {
+            overflow: scroll;
+        }
+
+        /* adiciona barra de rolagem se necessario */
+        .overflow-auto {
+            overflow: auto;
+        }
+        
+        /* esconde o overflow no eito x */
+        .overflow-x-hidden {
+            overflow-x: hidden;
+        }
+
+        /* esconde o overflow no eixo y */
+        .overflow-y-hidden {
+            overflow-y: hidden;
+        }
+
+        /* barra de rolagem no eixo x */
+        .overflow-x-scroll {
+            overflow-x: scroll ;
+        }
+
+        /* conteudo que transborda visivel */
+        .overflow-visible {
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="container fit-content overflow-hidden">
+        <div class="item">lorem</div>
+
+        <div  class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, reiciendis!</div>
+
+        <div  class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sequi, fugit ratione impedit dicta necessitatibus? Vitae voluptas, earum consequuntur saepe quam perferendis numquam consectetur a?</div>
+
+        <div  class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ratione ipsa a libero at architecto sapiente. Quibusdam sequi repellendus, itaque rem, odit facere tenetur eum voluptatum ipsa ullam incidunt recusandae explicabo temporibus aliquam quidem facilis eos aliquid harum delectus dolorem consectetur vel! Qui dolores sapiente iure animi suscipit atque reprehenderit commodi praesentium omnis, ea quae sint vel molestiae, assumenda nam velit eos magnam! Architecto ad doloremque accusamus aperiam nisi laboriosam minima, optio assumenda quisquam impedit!</div>
+    </div>
+
+    <div class="container min-content overflow-auto ">
+        <div class="item">lorem</div>
+
+        <div  class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, reiciendis!</div>
+
+        <div  class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sequi, fugit ratione impedit dicta necessitatibus? Vitae voluptas, earum consequuntur saepe quam perferendis numquam consectetur a?</div>
+
+        <div  class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ratione ipsa a libero at architecto sapiente. Quibusdam sequi repellendus, itaque rem, odit facere tenetur eum voluptatum ipsa ullam incidunt recusandae explicabo temporibus aliquam quidem facilis eos aliquid harum delectus dolorem consectetur vel! Qui dolores sapiente iure animi suscipit atque reprehenderit commodi praesentium omnis, ea quae sint vel molestiae, assumenda nam velit eos magnam! Architecto ad doloremque accusamus aperiam nisi laboriosam minima, optio assumenda quisquam impedit!</div>
+    </div>
+
+    <div class="container max-content overflow-auto">
+        <div class="item">lorem</div>
+
+        <div  class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, reiciendis!</div>
+
+        <div  class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sequi, fugit ratione impedit dicta necessitatibus? Vitae voluptas, earum consequuntur saepe quam perferendis numquam consectetur a?</div>
+
+        <div  class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ratione ipsa a libero at architecto sapiente. Quibusdam sequi repellendus, itaque rem, odit facere tenetur eum voluptatum ipsa ullam incidunt recusandae explicabo temporibus aliquam quidem facilis eos aliquid harum delectus dolorem consectetur vel! Qui dolores sapiente iure animi suscipit atque reprehenderit commodi praesentium omnis, ea quae sint vel molestiae, assumenda nam velit eos magnam! Architecto ad doloremque accusamus aperiam nisi laboriosam minima, optio assumenda quisquam impedit!</div>
+    </div>
+</body>
+</html>
