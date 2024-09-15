@@ -23,7 +23,7 @@ body {
 .titulo h1 {
     padding-bottom: 20px;
     color: #464D42;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 
@@ -72,7 +72,7 @@ img {
     font-weight: bolder;
     color: #3e4d54;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .description p:nth-child(2) {
