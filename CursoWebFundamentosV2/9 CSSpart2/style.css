@@ -5,10 +5,13 @@
 /* em = 16px */
 html {
     font-size: 62.5%;
+    padding-bottom: 550px;
 }
 b {
     color: red;
     font-size: 1rem;
+    font-size: 3rem;
+    font-size: 50%;
 }
 
 h1 {
@@ -16,5 +19,64 @@ h1 {
 }
 
 p {
-    font-size: 2em;
+    font-size: 3em;
+    width: 10em;
+    background-color: #ccc;
+}
+
+.porcentagem {
+    /* largunra elemento pai */
+    width: 60%;
+    height: 500px;
+    background-color: yellow;
+}
+
+.porcentagem p {
+    background-color: #ccc;
+    color: orange;
+    /* largura do pai */
+    padding-top: 50%;
+    width: 50%;
+    font-size: 1rem;
+}
+
+.padding-em {
+    background-color: red;
+}
+
+.padding-em p {
+    background-color: transparent;
+    margin: 0;
+    padding: 1em; 
+    /*10px*/
+    font-size: 40px;
+}
+
+.viewport-container {
+    font-size: 3rem;
+    height: auto;
+
+}
+
+.viewport{
+    width: 90%;
+    height: 90%;
+    background-color: hsla(240, 100%, 50%, 0.414);
+}
+
+.em {
+    width: 20em;
+    padding: 1em;
+    margin: 1em;
+    background-color: orange;
+    font-size: 2em; 
+}
+
+.ch {
+    width: 20ch;/*20 largura numero 0*/
+    width: 180px;
+    padding: 1em;
+    margin: 1em;
+    background-color: orange;
+    font-size: 3em;
 }
