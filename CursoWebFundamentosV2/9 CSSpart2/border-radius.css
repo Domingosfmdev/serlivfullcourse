@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+div {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+
+    /* slipses duas abordagens */
+    border-radius: 50px / 20px;
+    border-radius:  50px 20px 0 80px / 100px 50px 0 20px;
+}
