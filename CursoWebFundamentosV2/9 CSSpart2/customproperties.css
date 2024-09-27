@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+:root {
+    /* psedo elemento não gera especificidade */
+    --header-height:10rem;
+    --main-color: hsl(240, 100%, 50%);
+}
+
+html {
+    font-size: 62.5%;
+    /* variavel */
+    --header-height: 15rem;
+}
+
+header {
+    width: 100%;
+    background-color: var(--main-color);
+    height: var(--header-height);
+    font-size: 2rem;
+
+    /* saem do fluxo documento */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main {
+    /* calcular diversas unidades de medida diferente */
+    min-height: calc(100vh - var(--header-height) - 2rem);
+    background-color: #ccc;
+    font-size: 2rem;
+
+    margin-top : var(--header-height);
+}
+
+footer {
+    height: 10rem;
+    font-size: 2rem;
+    background-color: blue;
+}
