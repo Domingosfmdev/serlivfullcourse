@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-size: 3em;
+
+    text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.816),-3px 3px 0 rgba(0, 0, 0, 0.745),-5px 5px 0 rgba(0, 0, 0, 0.449),-7px 7px 0 rgba(0, 0, 0, 0.326);
+    color: rgba(245, 245, 245, 0.772);
+}
+
+p {
+    text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.816),-3px 3px 0 rgba(0, 0, 0, 0.745),-5px 5px 0 rgba(0, 0, 0, 0.449),-7px 7px 0 rgba(0, 0, 0, 0.326);
+    color: rgba(245, 245, 245, 0.772);
+    font-size: 2em;
+    font-weight: bolder;
+}
