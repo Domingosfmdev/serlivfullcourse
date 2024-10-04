@@ -24,6 +24,10 @@
     --font5: "Viaoda Libre", serif;
 }
 
+html {
+    width: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -43,9 +47,10 @@ header, main,footer {
 
 header {
     background-image: url('../images/topo.jpg');
-    background-position: left bottom ;
+    background-position: center left ;
     background-size: cover;
     height: 100vh;
+    width: 100%;
     background-repeat: no-repeat;
     padding: 0px 0px 20px 0px;
 }
@@ -126,8 +131,8 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    column-gap: 25px;
-    row-gap: 20px;
+    column-gap: 1.1rem;
+    row-gap: 1.1rem;
     margin: auto;
 }
 
@@ -152,25 +157,23 @@ header {
 }
 
 .footer {
-    height: 100vh;
+    height: 80vh;
 }
 
 .footer_section {
     background-image: url('../images/bg_detalhe.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    height: 100%;
-
+    background-position: right bottom;
 }
 
 .footer-detalhes {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
+    padding: 40px 60px;
+    width: 50%;
+    
 }
 
-.footer-detalhes h1 {
+.footer-detalhes h2 {
     font-size: 2.3em;
     color: white;
     margin-bottom: 40px;
@@ -182,10 +185,12 @@ header {
 
 .footer-detalhes p {
     color: rgba(255, 255, 255, 0.746);
-    max-width: 500px;
+    min-width: 300px;
     font-size: 0.9em;
     font-family: var(--font1);
     line-height: 20px;
+    padding-right: 20px;
+    border: 1px solid red;
 }
 
 
