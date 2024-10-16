@@ -349,7 +349,7 @@
   }
 
   :root {
-    --primary-color: yellow;
+    --primary-color: orange;
 
   }
 
@@ -410,6 +410,13 @@ nav a{
 .wrapperContainer-dark2 {
     background-color: #003464;
     color: #fafafa;
+}
+
+.wrappercontainer-fixed {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .container {
@@ -541,4 +548,12 @@ nav a{
   text-align: center;
   padding: 4.5rem;
   color: white;
+}
+
+.wrapperContainer-padder{
+  padding-top: 12rem;
+}
+
+.wrapperContainer-padder2 {
+  padding-top: 2rem;
 }
