@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="descrição legal da minha página">
+    <meta name="author" content="Domingos França Moretto">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="popover.css">
+    <title>Popover</title>
+</head>
+<body>
+    <h1>Curso de web-design - popover</h1>
+
+    <div class="container">
+        <button popovertarget="my-popover">Toggle popover</button>
+        <div id="my-popover" popover>Este texto é aberto ao clicar no botão.</div>
+        <hr>
+        <button popovertarget="my-popover2">Popover auto(default)</button>
+        <div id="my-popover2" popover="auto">Este texto é aberto ao clicar no botão.</div>
+        <hr>
+        <button popovertarget="my-popover3">Popover manual</button>
+        <div id="my-popover3" popover="manual">Este texto é não fecha ao clicar fora.</div>
+        <hr>
+        <button popovertarget="my-popover4" popovertargetaction="show">Popover show</button>
+        <button popovertarget="my-popover4" popovertargetaction="hide">Popover hide</button>
+        <div id="my-popover4" popover="manual">Este texto  não fecha ao clicar fora.</div>
+        <hr>
+        <div class="popover-container">
+            <button popovertarget="my-popover5">Toggle popover dentro de div</button>
+            <div popover id="my-popover5" >texto de ajuda do popover</div>
+        </div>
+    </div>
+    
+</body>
+</html>
