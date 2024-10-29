@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="descrição legal da minha página">
+    <meta name="author" content="Domingos França Moretto">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="form.css">
+    <title>Titulo da Página</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Introdução</legend>
+
+            <label for="">Email</label>
+            <br>
+            <input type="email" name="email" required>
+            <br><br>
+
+            <label for="filhos">Quantidade de dependentes</label>
+            <br>
+            <input type="number" id="filhos" min="0" max="1000">
+            <br><br>
+            <label for="date">Data</label>
+            <br>
+            <input type="date" name="" id="" min="2022-01-15" max="2022-12-15">
+            <br><br>
+            Possui atividade extra?
+            <br><br>
+            <label >
+                <input type="radio" name="atvExtra" value="s">Sim
+            </label>
+            <label>
+                <input type="radio" name="atvExtra" value="n">Não
+            </label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Area de interesse</legend>
+
+            <label>
+                <input type="checkbox" name="interese" value="html">HTML
+            </label>
+
+            <label>
+                <input type="checkbox" name="interese" value="css">CSS
+            </label>
+
+            <label>
+                <input type="checkbox" name="interese" value="js">JS
+            </label>
+
+            <label>
+                <input type="checkbox" name="interese" value="python">Python
+            </label>
+
+            <label>
+                <input type="checkbox" name="interese" value="java">Java
+            </label>
+
+            <br><br>
+            <label for="">Escolha uma linguagem
+            <br><br>
+            <select name="linguagem" required multiple size="4">
+                <option value="">Selecione uma</option>
+
+                <optgroup label="frontend">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JAVASCRIPT</option>
+                </optgroup>
+                
+                <optgroup label="backend">
+                    <option value="python">PYTHON</option>
+                    <option value="java">JAVA</option>
+                </optgroup>
+            </select>
+
+            <input type="text" list="linguagemList">
+            <datalist id="linguagemList">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="Javascript">
+                <option value="Java">
+                <option value="Python">
+                <option value="PHP">
+            </datalist>
+        </label>  
+
+        </fieldset>
+        
+        <br><br><br>
+        <input type="submit" value="Mandar">
+    </form>
+</body>
+</html>
