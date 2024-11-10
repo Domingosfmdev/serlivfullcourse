@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="descrição legal da minha página">
+    <meta name="author" content="Domingos França Moretto">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="meter_progress.css">
+    <title>Meter e progress</title>
+</head>
+<body>
+    <h1>Meter</h1>
+    <!-- apresenta uma regra -->
+    <label for="combustivel">nivel do combustivel <br>
+        <meter id="combustivel" value="31" min="0" max="100" low="30" high="90" optimum="95">
+        </meter>
+    </label>
+<hr>
+
+    <h1>progress</h1>
+    <!-- porcentagem de uma tarefa -->
+
+    <label for="">porcentagem da tarefa <br>
+        <progress max="100" value="70">
+            70%
+        </progress>
+    </label>
+
+    <form action="" oninput="result.value = a.value * b.value">
+        <!-- mostrar valores para o user -->
+         <input type="number" name="a" id="a" min="0" max="10"> x
+         <input type="number" name="b" id="b" min="0" max="10"> =
+        <output name="result" for="a b">20</output>
+    </form>
+
+    <h1>accent-color</h1>
+</body>
+</html>
